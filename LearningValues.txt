@@ -1,0 +1,33 @@
+// Reference System, AllLearnings are connected;
+
+0.05	0.05	0	1e-1    //PF-DCN Synapses: 
+12e-4   30e-3   0           //MF-DCN Synapses
+0.25    0.25    0           //KP
+5e-8	15e-6   0           //IO-DCN Synapses
+12e-4	30e-3   0           //PC-DCN Synapses 
+
+->  Fast learning. Sinaptic Weight convergence in about 500 trials MF-DCN.
+
+// Learning just at PF-DCN Synapses: 
+
+0.05	0.05	0	1e-1
+0   0   0
+0   0   0
+0	0   0
+0	0   0 
+
+// Learning  at PF-DCN Synapses MF-DCN Synapses and PC-DCN Synapses: 
+
+0.05	0.05	0	1e-1    //PF-DCN Synapses: 
+12e-4   30e-3   0           //MF-DCN Synapses
+0.0     0.0    0            //KP
+0.0	0   0.0                 //IO-DCN Synapses
+12e-4	30e-3   0           //PC-DCN Synapses
+
+// Learning  at PF-DCN Synapses, MF-DCN Synapses, PC-DCN Synapses AND IO-DCN Synapses:
+
+0.05	0.05	0	1e-1    //PF-DCN Synapses: 
+12e-4   30e-3   0           //MF-DCN Synapses
+0.25    0.25    0           //KP
+5e-8	15e-6   0           //IO-DCN Synapses
+12e-4	30e-3   0           //PC-DCN Synapses  
